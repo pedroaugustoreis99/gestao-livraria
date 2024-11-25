@@ -104,8 +104,8 @@ class LoginController
         $login_model = new LoginModel();
         $resultado = $login_model->cadastrar($usuario, $senha);
         if ($resultado->status == 'success') {
-            // Depois vou criar uma view informando que o usuário foi cadastrado com sucesso!
-            echo 'Usuário cadastrado com sucesso!';
+            $_SESSION['id_usuario'] = $resultado->last_id;
+            header('Location: /home');
         } else if ($resultado->status == 'error') {
             Log::alert("Houve um erro na action " . __METHOD__ . " ao tentar cadastrar um usuário. O erro produziu a seguinte mensagem: " . $resultado->msg);
             view('sistema/erro-interno');
@@ -212,7 +212,7 @@ class LoginController
 
     public function excluir()
     {
-        $dados = array();
+        $dados['titulo'] = 'Deseja realmente excluir o perfil?';
         if (isset($_SESSION['erro_de_validacao'])) {
             $dados['erro_de_validacao'] = $_SESSION['erro_de_validacao'];
             unset($_SESSION['erro_de_validacao']);
@@ -236,6 +236,7 @@ class LoginController
         if ($login_model->verificar_login($usuario, $senha)) {
             $resultado = $login_model->excluir($_SESSION['id_usuario']);
             if ($resultado->status == 'success') {
+                unset($_SESSION['id_usuario']);
                 header('Location: /');
             } else if ($resultado->status == 'error') {
                 Log::alert("Houve um erro na action " . __METHOD__ . " ao tentar atualizar um usuário. O erro produziu a seguinte mensagem: " . $resultado->msg);

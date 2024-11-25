@@ -10,10 +10,10 @@ define('NOME_APP', 'Framework MVC');
  * Essa constante será usada na classe system\Database para conectar ao banco de dados.
  */
 define('MYSQL_CONFIG', [
-    'host' => '', // Endereço do host (ex: 'localhost' ou IP do servidor).
-    'database' => '', // Nome do banco de dados a ser utilizado.
-    'username' => '', // Nome do usuário para acessar o banco.
-    'password' => '' // Senha do usuário do banco de dados
+    'host' => 'localhost', // Endereço do host (ex: 'localhost' ou IP do servidor).
+    'database' => 'gestao_livraria', // Nome do banco de dados a ser utilizado.
+    'username' => 'pedro', // Nome do usuário para acessar o banco.
+    'password' => '@Science1' // Senha do usuário do banco de dados
 ]);
 
 /*

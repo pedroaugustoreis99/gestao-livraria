@@ -1,0 +1,361 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #c2f0c2;
+}
+
+/* Linha de separação */
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin: 1rem 0;
+}
+
+/* Geral para formulários */
+form {
+    width: 100%;
+    max-width: 400px;
+    margin: 1rem auto;
+    padding: 1.5rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="password"] {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 4px rgba(76, 175, 80, 0.4);
+}
+
+form input[type="submit"] {
+    display: inline-block;
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Estilos de mensagens de erro */
+form span {
+    display: block;
+    color: red;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+/* Estilos específicos para a página de login */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-color: #f2f2f2;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Estilos específicos para a página de cadastro */
+.cadastro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-color: #f2f2f2;
+}
+
+.cadastro-form {
+    width: 100%;
+    max-width: 400px;
+}
+
+.cadastro-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.cadastro-form input[type="text"],
+.cadastro-form input[type="password"] {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.cadastro-form input[type="text"]:focus,
+.cadastro-form input[type="password"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 4px rgba(76, 175, 80, 0.4);
+}
+
+.cadastro-form span.error-message {
+    display: block;
+    color: red;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.cadastro-form input[type="submit"] {
+    display: inline-block;
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.cadastro-form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Estilos específicos para a página de perfil */
+.perfil-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 80vh;
+    background-color: #f9f9f9;
+    padding: 2rem;
+}
+
+.perfil-form {
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.perfil-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.perfil-form input[type="text"],
+.perfil-form input[type="password"] {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.perfil-form input[type="text"]:focus,
+.perfil-form input[type="password"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 4px rgba(76, 175, 80, 0.4);
+}
+
+.perfil-form input[type="submit"] {
+    display: inline-block;
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.perfil-form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Estilo das mensagens de erro */
+.perfil-form .error-message {
+    display: block;
+    color: red;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+/* Estilo para o link de exclusão */
+.perfil-excluir {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.perfil-excluir .excluir-link {
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.perfil-excluir .excluir-link:hover {
+    color: darkred;
+}
+
+/* Estilos específicos para a página de exclusão */
+.exclusao-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-color: #fff8f8;
+    padding: 2rem 1rem;
+}
+
+.exclusao-form {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.exclusao-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.exclusao-form input[type="password"] {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.exclusao-form input[type="password"]:focus {
+    border-color: #e57373;
+    outline: none;
+    box-shadow: 0 0 4px rgba(229, 115, 115, 0.4);
+}
+
+.exclusao-form .btn-excluir {
+    display: inline-block;
+    width: 100%;
+    padding: 0.8rem;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.exclusao-form .btn-excluir:hover {
+    background-color: darkred;
+}
+
+/* Mensagem de erro */
+.error-message {
+    display: block;
+    color: red;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
