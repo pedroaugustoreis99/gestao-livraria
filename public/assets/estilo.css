@@ -359,3 +359,216 @@ form span {
     margin-bottom: 1rem;
     font-size: 0.9rem;
 }
+
+/* Estilos para o menu alternativo */
+.menu_alternativo {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.menu_alternativo a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu_alternativo a:hover {
+    color: #c2f0c2;
+}
+
+/* Estilos para a página inicial */
+.home-container {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.user-info {
+    font-size: 1rem;
+    color: #333;
+}
+
+.user-info a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.user-info a:hover {
+    color: #2e7d32;
+}
+
+/* Container principal da página de autores */
+.autores-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+/* Header da página de autores */
+.autores-header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+}
+
+.btn-cadastrar {
+    padding: 0.8rem 1.2rem;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cadastrar:hover {
+    background-color: #45a049;
+}
+
+/* Listagem dos autores */
+.autores-listagem {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Card de autor */
+.autor-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.autor-card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.autor-card p {
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.autor-card strong {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Ações no card de autor */
+.autor-acoes {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-editar, .btn-excluir {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-editar {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn-editar:hover {
+    background-color: #45a049;
+}
+
+.btn-excluir {
+    background-color: red;
+    color: white;
+}
+
+.btn-excluir:hover {
+    background-color: darkred;
+}
+
+/* Container principal do cadastro de autor */
+.autor-cadastro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+/* Formulário de cadastro */
+.autor-cadastro-form {
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Grupo de campos */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+/* Estilo para os rótulos */
+.autor-cadastro-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Campos de entrada */
+.input-field,
+.textarea-field {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.input-field:focus,
+.textarea-field:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 4px rgba(76, 175, 80, 0.4);
+}
+
+/* Botão de envio */
+.btn-submit {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #45a049;
+}
+
+/* Mensagens de erro */
+.error-message {
+    display: block;
+    color: red;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}

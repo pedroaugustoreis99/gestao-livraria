@@ -3,17 +3,17 @@
 /*
  * Define o nome da aplicação.
  */
-define('NOME_APP', 'Framework MVC');
+define('NOME_APP', 'Gestão para Livrarias');
 
 /*
  * Configurações do banco de dados que será utilizado na aplicação
  * Essa constante será usada na classe system\Database para conectar ao banco de dados.
  */
 define('MYSQL_CONFIG', [
-    'host' => 'localhost', // Endereço do host (ex: 'localhost' ou IP do servidor).
-    'database' => 'gestao_livraria', // Nome do banco de dados a ser utilizado.
-    'username' => 'pedro', // Nome do usuário para acessar o banco.
-    'password' => '@Science1' // Senha do usuário do banco de dados
+    'host' => '', // Endereço do host (ex: 'localhost' ou IP do servidor).
+    'database' => '', // Nome do banco de dados a ser utilizado.
+    'username' => '', // Nome do usuário para acessar o banco.
+    'password' => '' // Senha do usuário do banco de dados
 ]);
 
 /*
@@ -29,3 +29,10 @@ define('OPENSSL_IV', 'BzKAbjuREsHgnw56'); // Vetor de inicialização (IV) para 
  * Alterá-la resultará na impossibilidade de acessar dados criptografados anteriormente.
  */
 define('MYSQL_AES_KEY', 'Vduu47qL51hLn6bkYkY6NlO1nivsmdfD');
+
+/*
+* Constantes que indicam o status da operação: criando ou atualizando um registro no banco de dados.
+* Essas constantes são utilizadas nos controllers para validar campos de formulário
+*/
+define('STATUS_CRIANDO', 1);
+define('STATUS_ATUALIZANDO', 2);

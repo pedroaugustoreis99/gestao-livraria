@@ -6,6 +6,8 @@ class MainController
 {
     public function index()
     {
-        echo 'Aqui eu vou deixar uma pequena documentação da aplicação';
+        view('layouts/header', ['titulo' => 'Gestão para livrarias']);
+
+        view('layouts/footer');
     }
 }

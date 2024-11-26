@@ -16,6 +16,12 @@ trait Rotas
              */
             '/' => 'MainController@index',
 
+            
+            '/autores' => 'AutoresController@index',
+            '/autores/create' => 'AutoresController@create',
+
+
+
             /*
              * Rotas relacionadas ao sistema de login do framework.
              */
@@ -34,6 +40,8 @@ trait Rotas
         ],
         'POST' => [
 
+            '/autores/store' => 'AutoresController@store',
+            
             
             /*
              * Rotas relacionadas ao sistema de login do framework

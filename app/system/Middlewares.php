@@ -54,6 +54,13 @@ trait Middlewares
         '/exclusao-confirmada' => [
             'verificar_autenticacao'
         ],
+
+        '/autores' => [
+            'verificar_autenticacao'
+        ],
+        '/autores/create' => [
+            'verificar_autenticacao'
+        ],
     ];
 
     /*
